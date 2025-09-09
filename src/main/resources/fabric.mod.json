@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "rainworldmc_shader",
+  "version": "${version}",
+  "name": "Rainworldmc_shader",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/BrickCraftDream/Rainworldmc_shader"
+  },
+  "license": "unlicense",
+  "icon": "assets/rainworldmc_shader/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.brickcraftdream.rainworldmc_shader.client.Rainworldmc_shaderClient"
+    ],
+    "main": [
+      "net.brickcraftdream.rainworldmc_shader.Rainworldmc_shader"
+    ]
+  },
+  "mixins": [
+    "rainworldmc_shader.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
